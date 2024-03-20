@@ -1,13 +1,13 @@
 .paste-button {
     position: relative;
     display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Helvetica;
   }
   
   .button {
     background-color: #4CAF50;
     color: #212121;
-    padding: 10px 15px;
+    margin-top: 5px;
     font-size: 15px;
     font-weight: bold;
     border: 2px solid transparent;
@@ -60,4 +60,63 @@
   .paste-button:hover .dropdown-content {
     display: block;
   }
+.nav-link{
+  font-family: Helvetica;
+  color: white;
+}
+
+.boas-vindas{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.container-fluid{
+  background-color: #4300fa;
   
+}
+body{
+  background-color: #ffffff;
+}
+.card-purple{
+ width: 250px;
+ height: 50px;
+ background-color: #4CAF50;
+ border-radius: 15px;
+ text-align: center;
+ margin: auto;
+ transition: all 0.5s;
+ padding-top: 10px;
+}
+
+.card-purple:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.card-blue{
+  width: 250px;
+ height: 50px;
+ background-color: #4CAF50;
+ border-radius: 15px;
+ text-align: center;
+ margin: auto;
+ transition: all 0.5s;
+ padding-top: 10px;
+}
+.card-blue:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+h2{
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
