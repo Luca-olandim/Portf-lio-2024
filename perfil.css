@@ -82,15 +82,11 @@ body{
     float: left;
 }
 
-.curriculo{
-    width: 250px;
-    height: 500px;
-    
-}
-
 #curriculum{
-    width: 353.5px;
-    height: 500px;
+    width: 707.7px;
+    height: 1000px;
+    margin: 10px;
+    
 }
 
 #foto_perfil{
