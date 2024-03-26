@@ -72,20 +72,42 @@
 
 body{
   background-color: #ffffff;
+  
 }
 
+h1{
+  font-family: Helvetica ;
+  color: #0274b3;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+h2{
+  font-family: Helvetica ;
+  color: #0274b3;
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+
+
 .carta{
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 50%;
-    height: 500px;
-    float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 50%;
+  height: 500px;
+  float: left;
+  font-family: Helvetica;
 }
 
 #curriculum{
-    width: 707.7px;
-    height: 1000px;
-    margin: 10px;
+  width: 707.7px;
+  height: 1000px;
+  margin-left: 10px;
+  display: block;
+  margin: 0 auto;
     
 }
 
@@ -105,6 +127,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: 315px;
+    top: 550px;
+    
   }
   .example-2 .icon-content {
     margin: 0 10px;
@@ -176,19 +202,3 @@ ul {
   .example-2 .icon-content a[data-social="github"] ~ .tooltip {
     background-color: #24262a;
   }
-  .example-2 .icon-content a[data-social="instagram"] .filled,
-  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-    background: linear-gradient(
-      45deg,
-      #405de6,
-      #5b51db,
-      #b33ab4,
-      #c135b4,
-      #e1306c,
-      #fd1f1f
-    );
-  }
-  .example-2 .icon-content a[data-social="youtube"] .filled,
-  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-    background-color: #ff0000;
-  }  

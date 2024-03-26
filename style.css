@@ -64,6 +64,19 @@
 font-family: Helvetica;
 color: white;
 }
+.nav-link:hover{
+  color: black;
+}
+
+
+.tip{
+  color: white;
+}
+
+.tip:hover{
+  color: white;
+}
+
 
 .boas-vindas{
 margin-top: 50px;
@@ -90,8 +103,6 @@ padding-top: 10px;
 }
 
 .card:hover {
-background-color: #6fc5ff;
-box-shadow: 0 0 20px #6fc5ff50;
 transform: scale(1.1);
 }
 h2{
