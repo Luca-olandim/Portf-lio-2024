@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Gulf' ;
+  src: url('GulfsDisplay-Normal.ttf');
+}
 .paste-button {
   position: relative;
   display: block;
@@ -79,8 +83,18 @@ color: white;
 
 .boas-vindas{
 margin-top: 50px;
-text-align: center;
-font-size: 25px;
+text-align: left;
+width: 50%;
+margin-left: 10px ;
+}
+p{
+  font-size: larger;
+}
+h2{
+  font-family: Gulf,Helvetica;
+}
+h4{
+  font-family: Gulf,Helvetica;
 }
 
 .container-fluid{
@@ -106,14 +120,13 @@ transform: scale(1.1);
 }
 
 h1{
-  font-family: "Permanent Marker", cursive;
-  font-style: normal;
+  font-family: Gulf;
+  font-weight: bold;
+  text-align: center;
+  font-size: 100px;
 }
-
-
-h2{
-text-align: center;
-font-family: Helvetica;
-font-size: 25px;
-font-weight: bold;
+.portfolios{
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
 }
