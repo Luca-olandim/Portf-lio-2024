@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Gulf' ;
+  src: url('/GulfsDisplay-Normal.ttf');
+}
+
 .paste-button {
     position: relative;
     display: block;
@@ -64,6 +69,10 @@
   font-family: Helvetica;
   color: white;
 }
+.nav-link:hover{
+  color: black;
+}
+
 
 .container-fluid{
   background-color: #4300fa;
@@ -75,14 +84,48 @@ body{
   
 }
 
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 .primeiro_tri,.segundo_tri,.terceiro_tri{
-    width: 250px;
-    height: 50px;
-    background-color: #4300fa;
-    border-radius: 15px; 
-    text-align: center;
-    padding-top: 10px;
-    float: inline-start;
-    margin: 5px;
-    
+  width:250px ;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #4300fa;
+  margin: 10px;
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+.primeiro_tri:hover{
+  background-color: #609AE0;
+}
+
+.segundo_tri:hover{
+  background-color: #609AE0;
+}
+
+.terceiro_tri:hover{
+  background-color: #609AE0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+h1{
+  font-family: Gulf;
+  font-weight: bold;
+  text-align: center;
+  font-size: 100px;
+  color: #0274b3;
 }
