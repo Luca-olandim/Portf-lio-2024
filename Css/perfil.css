@@ -123,6 +123,8 @@ h2{
     margin-left: 100px;
     width: 375px;
     height: 500px;
+    border-style: solid;
+    border-color: #0274b3;
     
 }
 ul {
@@ -133,9 +135,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 285px;
-    top: 550px;
+    position: relative;
+    top: 48%;
     
   }
   .example-2 .icon-content {
