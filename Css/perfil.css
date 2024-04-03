@@ -89,6 +89,7 @@ h1{
   font-size: 35px;
   font-weight: 500;
   margin-top: 20px;
+  margin-left: 2%;
 }
 
 h2{
@@ -99,13 +100,29 @@ h2{
   margin-left: 10px;
 }
 
+.sobre_mim{
+  display: flex;
+}
+
 .carta{
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 50%;
-  height: 500px;
-  float: left;
-  font-family: Helvetica;
+  display: flex;
+  width: 45%;
+  margin-left: 2%;
+  text-align: justify;
+}
+
+.foto_luca{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  margin-bottom: 10%;
+}
+
+#foto_perfil{
+  width: 80%;
+  border-radius: 15%;
 }
 
 #curriculum{
@@ -114,19 +131,10 @@ h2{
   margin-left: 10px;
   display: block;
   margin: 0 auto;
+  margin-top: 5%;
     
 }
 
-#foto_perfil{
-    border-radius: 100%;
-    margin-top: 10px;
-    margin-left: 100px;
-    width: 375px;
-    height: 500px;
-    border-style: solid;
-    border-color: #0274b3;
-    
-}
 ul {
     list-style: none;
   }
@@ -136,7 +144,6 @@ ul {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 48%;
     
   }
   .example-2 .icon-content {
