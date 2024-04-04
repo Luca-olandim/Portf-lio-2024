@@ -51,5 +51,44 @@
             </div>
         </div>
     </div>
+    <h1>Atividades de Desenvolvimento de Sistemas 1º Trimestre</h1>
+    <div class="jackson">
+        <h3>digite os horarios que deseja calcular!</h3>
+        <input type="number" id="horaInicial" placeholder="Hora Inicial">  :  
+        <input type="number" id="minInicial" placeholder="Minuto Inicial"><br>
+        <input type="number" id="horaFinal" placeholder="Hora Final">  :  
+        <input type="number" id="minFinal" placeholder="Minuto Final"><br>
+        <button onclick="soma()">Soma</button>
+        <button onclick="sub()">Diferença</button>
+        <p id="resultado">Resultado</p>
+    </div>
+    <script>
+        let hi = document.getElementById("horaInicial");
+        let mi = document.getElementById("minInicial");
+        let hf = document.getElementById("horaFinal");
+        let mf = document.getElementById("minFinal");
+        let resultado = document.getElementById("resultado");
+
+        function soma() {
+            let somaHora = Number(hi.value) + Number(hf.value);
+            let somaMin = Number(mi.value) + Number(mf.value);
+    
+            while (somaMin > 59) {
+                somaMin -= 60;
+                somaHora++;
+            }
+            resultado.innerHTML = somaHora + ":" + somaMin;
+        }
+
+        function sub() {
+            let subHora = Number(hf.value) - Number(hi.value);
+            let subMin = Number(mf.value) - Number(mi.value);
+            if (subMin < 0) {
+                subMin += 60;
+                subHora--; 
+            }
+            resultado.innerHTML = subHora + ":" + subMin;
+        }
+    </script>
 </body>
 </html>
