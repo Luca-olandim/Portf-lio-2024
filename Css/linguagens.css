@@ -180,3 +180,9 @@ a:hover {
   text-decoration: underline;
   
 }
+
+p{
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: larger;
+}

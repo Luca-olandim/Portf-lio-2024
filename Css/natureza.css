@@ -130,52 +130,52 @@ a:hover {
   text-decoration: none;
 }
 
-.atividade1,
-    .atividade2,
-    .atividade3 {
-        clear: both;
-        margin-bottom: 20px;
-    }
+.atividade-container {
+  clear: both;
+  margin-bottom: 20px;
+}
 
-    .apresentacao1,
-    .apresentacao2,
-    .apresentacao3,
-    .descricao1,
-    .descricao2,
-    .descricao3 {
-        float: left;
-        width: 45%;
-        margin-right: 20px; 
-        margin-left: 2%;
-        margin-bottom: 2%;
-    }
+.apresentacao1,
+.apresentacao2,
+.apresentacao3,
+.apresentacao4,
+.descricao1,
+.descricao2,
+.descricao3,
+.descricao4 {
+  width: 45%;
+  margin-right: 20px; 
+  margin-left: 2%;
+  margin-bottom: 2%;
+  float: left;
+}
 
-    .descricao1,
-    .descricao2,
-    .descricao3 {
-        margin-right: 2%;
-    }
+.descricao1,
+.descricao2,
+.descricao3,
+.descricao4 {
+  margin-right: 2%;
+}
 
-    iframe {
-        display: block;
-        margin-bottom: 10px;
-    }
+iframe {
+  display: block;
+  margin-bottom: 10px;
+}
 
-    img {
-        max-width: 75%;
-        height: auto;
-        display: block;
-    }
+/* Limpar floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-    /* Limpar floats */
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-#a1,#a2,#a3{
+#a1, #a2, #a3, #a4 {
   color: #4300fa;
   text-decoration: underline;
-  
+}
+
+p{
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: larger;
 }
