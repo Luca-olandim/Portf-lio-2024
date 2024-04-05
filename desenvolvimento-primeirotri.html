@@ -52,43 +52,75 @@
         </div>
     </div>
     <h1>Atividades de Desenvolvimento de Sistemas 1º Trimestre</h1>
-    <div class="jackson">
-        <h3>digite os horarios que deseja calcular!</h3>
-        <input type="number" id="horaInicial" placeholder="Hora Inicial">  :  
-        <input type="number" id="minInicial" placeholder="Minuto Inicial"><br>
-        <input type="number" id="horaFinal" placeholder="Hora Final">  :  
-        <input type="number" id="minFinal" placeholder="Minuto Final"><br>
-        <button onclick="soma()">Soma</button>
-        <button onclick="sub()">Diferença</button>
-        <p id="resultado">Resultado</p>
-    </div>
-    <script>
-        let hi = document.getElementById("horaInicial");
-        let mi = document.getElementById("minInicial");
-        let hf = document.getElementById("horaFinal");
-        let mf = document.getElementById("minFinal");
-        let resultado = document.getElementById("resultado");
+    <div class="atividade1">
+        <div class="atividade-container">
+            <div class="apresentacao1">
+                <div class="calc_hora">
+                    <h3>Digite os horários que deseja calcular!</h3>
+                    <input type="number" id="horaInicial" placeholder="Hora Inicial">  :  
+                    <input type="number" id="minInicial" placeholder="Minuto Inicial"><br>
+                    <input type="number" id="horaFinal" placeholder="Hora Final">  :  
+                    <input type="number" id="minFinal" placeholder="Minuto Final"><br>
+                    <button id="button1" onclick="soma()">Soma</button>
+                    <button id="button2" onclick="sub()">Diferença</button>
+                    <p id="resultado">Resultado</p>
+                </div>
+            </div>
+            <div class="descricao1">  
+                <p>Como forma de iniciar o aprendizado de utilização do React construimos uma calculadoras de horas.</p>
+                <p>Competências e Habilidades: ?</p>
+            </div>
+        </div>
+    </div>       
+    <div class="atividade2">
+        <div class="atividade-container">
+            <div class="apresentacao2">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                 <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                   src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGBglBM7z8&#x2F;stEF7RPF-PiDjxPDkghDxg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                 </iframe>
+               </div>
+            </div>
+            <div class="descricao2">
+                <p>Após seguir o tutorial do professor criamos uma 'API' com o SpringBoot de cadastro de livros. Posteriomente utilizamos
+                o programa Postman para testar nossa API.</p>
+                <p>Competências e Habilidades: ?</p>
+            </div>
+        </div>
+    </div>    
+<script>
+    let hi = document.getElementById("horaInicial");
+let mi = document.getElementById("minInicial");
+let hf = document.getElementById("horaFinal");
+let mf = document.getElementById("minFinal");
+let resultado = document.getElementById("resultado");
 
-        function soma() {
-            let somaHora = Number(hi.value) + Number(hf.value);
-            let somaMin = Number(mi.value) + Number(mf.value);
-    
-            while (somaMin > 59) {
-                somaMin -= 60;
-                somaHora++;
-            }
-            resultado.innerHTML = somaHora + ":" + somaMin;
-        }
+ function soma(){
+    let somaHora = Number(hi.value) + Number(hf.value);
+    let somaMin = Number(mi.value) + Number(mf.value);
+    while (somaMin > 59){
+        somaMin -= 60;
+        somaHora ++;
+    }
+    resultado.innerHTML = somaHora + ":" + somaMin;
+}
 
-        function sub() {
-            let subHora = Number(hf.value) - Number(hi.value);
-            let subMin = Number(mf.value) - Number(mi.value);
-            if (subMin < 0) {
-                subMin += 60;
-                subHora--; 
-            }
-            resultado.innerHTML = subHora + ":" + subMin;
-        }
-    </script>
+function sub(){
+    let momentoInicial = hi.value*60 + Number(mi.value) ;
+    let momentoFinal = hf.value*60 + Number(mf.value);
+    let resultadoHora = 0;
+    let resultadoMinuto = momentoInicial - momentoFinal;
+    if(resultadoMinuto < 0){
+        resultadoMinuto *= -1;
+    }
+    while(resultadoMinuto > 59){
+        resultadoMinuto -= 60;
+        resultadoHora ++;
+    }
+    resultado.innerHTML = resultadoHora+":"+resultadoMinuto;
+}   
+</script>
 </body>
 </html>
