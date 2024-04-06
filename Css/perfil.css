@@ -103,18 +103,15 @@ h1{
   text-align: justify;
 }
 
-.foto_luca{
+#foto_perfil{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 45%;
+  width: 35%;
   margin-bottom: 10%;
-}
-
-#foto_perfil{
-  width: 80%;
   border-radius: 15%;
+  margin-left: 2%;
 }
 
 #curriculum{
