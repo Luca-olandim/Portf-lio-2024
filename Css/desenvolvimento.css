@@ -90,7 +90,6 @@ h1{
 }
 
 
-
 a:hover {
   color: black;
   text-decoration: none;
@@ -104,8 +103,12 @@ a:hover {
 
 .apresentacao1,
 .apresentacao2,
+.apresentacao3,
+.apresentacao4,
 .descricao1,
-.descricao2 {
+.descricao2,
+.descricao3,
+.descricao4 {
   width: 45%;
   margin-right: 20px; 
   margin-left: 2%;
@@ -114,8 +117,16 @@ a:hover {
 }
 
 .descricao1,
-.descricao2 {
+.descricao2,
+.descricao3,
+.descricao4 {
   margin-right: 2%;
+}
+
+#a1,#a2,#a3,#a4{
+  color: #4300fa;
+  text-decoration: underline;
+  
 }
 
 iframe {
