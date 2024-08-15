@@ -91,7 +91,7 @@ h1{
 
 .certificados{
     display: flex;
-
+    margin-left: 2%;
 }
 
 img{
@@ -99,4 +99,5 @@ img{
     width: 45%;
     border-style: ridge;
     border-color: black;
+    margin-left: 2%;
 }
