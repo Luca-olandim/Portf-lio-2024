@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Gulf';
-    src: url('/GulfsDisplay-Normal.ttf');
-}
+
 .paste-button {
     position: relative;
     display: block;
@@ -73,27 +70,28 @@
 }
 
 .container-fluid{
-  background-color: #4300fa;
+  background-color: #232F40;
   
 }
 
 body{
-  background-color: #B8D3F4;
+  background-color: #BEBEBE;
   text-align: center;
   
 }
 
 h1{
-  font-family: Gulf, Helvetica;
-  color: #0274b3;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #3C3C3C;
   font-size: 85px;
-  font-weight: 500;
+  
   margin-top: 20px;
 }
 
 h2{
-  font-family: Helvetica ;
-  color: #0274b3;
+  font-family: 'Times New Roman', Times, serif;
+  color: #3C3C3C;
   font-size: 35px;
   font-weight: 500;
   margin-left: 10px;

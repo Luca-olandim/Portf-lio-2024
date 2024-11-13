@@ -74,18 +74,18 @@
 }
 
 .container-fluid{
-  background-color: #4300fa;
+  background-color: #232F40;
   
 }
 
 body{
-  background-color: #B8D3F4;
+  background-color: #BEBEBE;
   
 }
 
 h1{
-  font-family: Gulf, Helvetica;
-  color: #0274b3;
+  font-family: 'Times New Roman', Times, serif;
+  color: #3C3C3C;
   font-size: 35px;
   font-weight: 500;
   margin-top: 20px;
@@ -133,11 +133,11 @@ h1{
 }
 
 h2 {
-  font-family: Gulf, Helvetica;
-  color: #0274b3;
+  font-family: 'Times New Roman', Times, serif;
+  color: #3C3C3C;
   font-size: 35px;
   font-weight: 500;
-  margin-right: 4%; /* Adiciona um espaçamento entre o h2 e a ul.example-2 */
+  margin-right: 4%;
   margin-left: 2%;
 }
 
